@@ -1,10 +1,11 @@
 {
-  "name": "component-lib",
+  "name": "lib",
   "version": "0.0.1",
   "description": "Test component library ",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && npx babel ./src --out-dir ./lib --env-name \"lib\""
   },
   "author": "",
   "license": "ISC",
@@ -12,10 +13,13 @@
     "@babel/cli": "^7.0.0-beta.47",
     "@babel/core": "^7.0.0-beta.47",
     "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.47",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "@babel/preset-react": "^7.0.0-beta.47",
+    "babel-loader": "^8.0.0-beta",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
   }
 }
