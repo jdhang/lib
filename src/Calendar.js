@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 class Calendar extends Component {
   render() {
+    const string = "Calendar";
     return (
-      <div>Calendar Component</div>
+      <div>{string} Component</div>
     );
   }
 }

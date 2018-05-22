@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Travelers = () => (
-  <div>Travelers Component</div>
-);
+const Travelers = () => {
+  const string = 'Travelers';
+  return (
+    <div>{string} Component</div>
+  );
+};
 
 Travelers.propTypes = {
 };
