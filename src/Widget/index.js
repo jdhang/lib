@@ -1,1 +1,2 @@
-export Travellers from './Travellers';
+export Travelers from './Travelers';
+export Widget from './Widget';
