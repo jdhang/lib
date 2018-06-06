@@ -1,5 +1,5 @@
 import a from './a';
-import b from './a';
+import b from './b';
 
 export {
   a,
